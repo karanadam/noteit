@@ -5,3 +5,4 @@ backend/node_modules/
 # Environment files
 frontend/.env
 backend/.env
+backend/config.json
