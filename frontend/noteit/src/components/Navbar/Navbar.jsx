@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
 import SearchBar from '../SearchBar/SearchBar'
 import ProfileInfo from '../cards/ProfileInfo'
+import noteitLogo from '../..//assets/noteitLogo.svg'
 
 const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
 
@@ -28,7 +29,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
 
     return (
         <div className='flex items-center justify-between border-1 border-b-2 border-green-200 px-6 py-6'>
-            <h2 className='text-3xl font-bold'>noteit</h2>
+            <h2 className='text-3xl font-bold'><img src={noteitLogo} alt="noteitLogo" width="180pspx" /></h2>
             <SearchBar
                 value={searchQuery}
                 onChange={({ target }) => {

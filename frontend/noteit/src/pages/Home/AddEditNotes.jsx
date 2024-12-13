@@ -87,11 +87,11 @@ const AddEditNotes = ({ noteData, type, getAllNotes, onClose }) => {
             <div className='flex flex-col gap-12 p-6'>
                 <div className='flex flex-col gap-2'>
                     <label className='text-md text-neutral-500'>Title</label>
-                    <input type="text" placeholder='Go to gym at 5' className='input-box rounded-md font-medium p-3 text-' value={title} onChange={({ target }) => setTitle(target.value)} />
+                    <input type="text" placeholder='Enter Title' className='input-box rounded-md font-medium p-3 text-' value={title} onChange={({ target }) => setTitle(target.value)} />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <label className='text-md text-neutral-500'>Note</label>
-                    <textarea type="text" placeholder='yada yada' rows={10} className='input-box rounded-md font-medium p-3' value={content} onChange={({ target }) => setContent(target.value)} />
+                    <textarea type="text" placeholder='Enter Note' rows={10} className='input-box rounded-md font-medium p-3' value={content} onChange={({ target }) => setContent(target.value)} />
                 </div>
                 <div>
                     <label className='text-md text-neutral-500'>Tags</label>
